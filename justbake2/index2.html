@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Bake</title>
+	<link rel="stylesheet" type="text/css" href="./style2.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<body class = "bg-info">
+
+
+	<div id = "banner">
+		<span id = "owner"><img id = "logo" src = "./logo.png"/></span>
+
+		<button id = "addFoodBtn" class = "btn btn-primary ">
+			<span class = "glyphicon glyphicon-cutlery"></span>
+		</button>
+		
+		<!--<button id = "getFoodBtn" class = "btn btn-primary ">
+			<span class = "glyphicon glyphicon-cloud-download"></span>
+		</button>-->
+
+	</div>
+
+	<div id = "controlPanel">
+		<input type="text" id = "addFoodText" placeholder="Nuovo Prodotto">
+		<button id = "subBtn" class = "btn btn-primary foodListBtn"><span class = "glyphicon glyphicon-minus"></span></button>
+		<button id = "addBtn" class = "btn btn-primary foodListBtn"><span class = "glyphicon glyphicon-plus"></span></button>
+		<button id = "startBtn" class = "btn btn-info foodListBtn"><span class = "glyphicon glyphicon-play"></span></button>
+		<button id = "stopBtn" class = "btn btn-warning foodListBtn"><span class = "glyphicon glyphicon-pause"></span></button>
+		<button id = "deleteBtn" class = "btn btn-danger foodListBtn"><span class = "glyphicon glyphicon-trash"></span></button>
+		<button id = "confirmBtn" class = "btn btn-success foodListBtn"><span class = "glyphicon glyphicon-ok"></span></button>
+	</div>
+
+	<div id = "foodList"></div>
+
+	<script type="text/javascript" src = "./timing2.js"></script>
+
+</body>
+</html>
+

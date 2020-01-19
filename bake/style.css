@@ -1,0 +1,117 @@
+body {
+	
+	padding:1%;
+}
+
+span.foodSpan {    
+	font-size:30;
+	font-weight: bold;
+	font-family: arial;
+	display: inline-block;
+	width: 28%;
+	vertical-align: middle;
+
+}
+
+span.timeSpan {   
+	font-size:30;
+	font-weight: bold;
+	font-family: arial;
+	display: inline-block;
+	width: 15%;
+	vertical-align: middle;
+}
+
+.foodItem {
+	margin-bottom: 1%;
+	padding-bottom: 1%;
+	margin-left: 1%;
+	margin-right: 1%;	
+	width: 98%;	
+	border-bottom: 1px solid black;
+}
+
+
+#addFoodText {
+	font-family: "Lucida Console";
+	font-size: 45;
+	height: 10%;
+	width: 35%;
+	margin-left: 1%;
+}
+
+#resetAllBtn {
+	float: right;
+	font-size: 25;
+	height: 10%;
+	margin-left: 2%;
+	width: 15%;
+
+}
+
+#addFoodBtn {
+	float: right;
+	height: 10%;
+	margin-left: 2%;
+	width: 15%;
+	font-size: 25;
+}
+
+
+
+#loadPref {
+	font-size: 45;
+	height: 10%;
+	width: 20%;
+	margin-left: 2%;
+}
+
+
+.startBtn, .stopBtn, .addBtn, .subBtn, .resetBtn, .deleteBtn, .prefBtn {
+	background-color: #ffeeaa;
+	border-style: solid;
+    border-width: 3px;
+    font-size:2.5em;
+    margin-right: 1%;
+    height: 10%
+}
+
+.addBtn, .subBtn {
+	color: #434750;
+	background-color: #efa94a;
+	width: 6%;
+}
+
+.addBtn {
+	border-color: none;
+}
+
+.subBtn {
+	border-color: none;
+}
+
+.startBtn, .stopBtn {
+	color: white;
+	width: 10%;
+}
+
+.startBtn{
+    background-color: #317f43;
+}
+
+.stopBtn{
+    background-color: #cc0605;
+}
+
+.resetBtn, .deleteBtn {
+	width: 7%;
+}
+
+.deleteBtn {
+    border-color: #000000;
+}
+
+
+.resetBtn{
+    border-color: #ffff00;
+}
