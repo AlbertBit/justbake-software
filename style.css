@@ -4,11 +4,11 @@ body {
 }
 
 span.foodSpan {    
-	font-size:60;
+	font-size:45;
 	font-weight: bold;
-	font-family: "AR BLANCA";
+	font-family: "Tw Cen MT";
 	display: inline-block;
-	width: 65%;
+	width: 62%;
 	vertical-align: middle;
 }
 
@@ -18,9 +18,9 @@ span.foodSpan:hover {
 }
 
 span.timeSpan {   
-	font-size:60;
+	font-size:45;
 	font-weight: bold;
-	font-family: "Lucida Console";
+	font-family: "Tw Cen MT";
 	display: inline-block;
 	width: 35%;
 	vertical-align: middle;
@@ -106,7 +106,7 @@ span.timeSpan {
 }
 
 #addFoodText {
-	font-family: "Lucida Console";
+	font-family: "Tw Cen MT";
 	height: 100%;
 	width: 36%;
 	font-size: 45;
