@@ -151,23 +151,19 @@ confirmBtn.onclick = function() {
 	if ( addFoodText.value !== "" ) {
 		if(currentId === "") {
 			//assign a new id
-			var id = "product"+timerMap.size.toString();
+			var ms = Date.now();
+			var id = "product_"+ ms.toString();
+
 			//create new timer
 			var timer = new Timer(id, addFoodText.value, 60);
 			timer.create(id);
 			//add to the map of timers
 			timerMap.set(id, timer);
 
-			//save timerMap into cookie
-			
     		var timerMapObj = {};
 			for (var [timer_index, timer] of timerMap ){
-
 				timerMapObj[timer_index] = timer;
 			}
-		    var timerMapStr = JSON.stringify(timerMapObj);
-			document.cookie = "savedMap="+timerMapStr;
-			console.log(document.cookie);
 
 		} else {
 			//modify timer
