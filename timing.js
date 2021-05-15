@@ -104,21 +104,25 @@ Timer.prototype.show = function() {
 
 	var min = Math.floor(this.remainingSeconds / 60);
 	var sec = Math.floor(this.remainingSeconds % 60);
-	var str = min + " min";// +  sec + "s ";
+	var str = "";
+	if(min>0) {
+		str = min + " min";
+	} else {
+		str = sec + " sec";
+	}
+
 
 	var foodDiv = document.getElementById(this.id);
 	var timeSpan = foodDiv.childNodes[1];
 	var timeSpanTextNode = timeSpan.childNodes[0];
 	timeSpan.textContent = str;
-
+	timeSpan.style.color = "orange";
 	if(activeTimerMap.has(this.id))  {
         if( this.remainingSeconds < 300) {
           timeSpan.style.color = "red";
         } else {
           timeSpan.style.color = "green";
         }
-    } else {
-    	timeSpan.style.color = "orange";
     }
 
 }
@@ -312,14 +316,17 @@ function timerMapCallback() {
 	console.log("active timers");
 	console.log(activeTimerMap);
 	console.log("current id: "+currentId);
-	for (var [timer_index, timer] of activeTimerMap ){
+	for (var [timer_index, timer] of timerMap ){
 
-		if (timer.remainingSeconds > 0) {
-			timer.remainingSeconds = timer.remainingSeconds - 1;
-		} else {
-			activeTimerMap.delete(timer.id);         
+		if(activeTimerMap.has(timer_index)) {
+			if (timer.remainingSeconds > 0) {
+				timer.remainingSeconds = timer.remainingSeconds - 1;
+			} else {
+				activeTimerMap.delete(timer.id);         
+			}
 		}
 		timer.show();
+
 	}
 }
 
